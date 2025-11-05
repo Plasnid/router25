@@ -16,7 +16,8 @@ function Root(){
 function Bork(){
   return <h1>Hello bork</h1>;
 }
-
+//let prefix = "/~sacklerstuart/routFun";
+//let prefix = "";
 const router = createBrowserRouter([
   {path: "/", Component: Home},
   {path: "/about", Component: About },
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "project/:projId",
     Component: Project,
+  },
+  {
+    path: "*",
+    Component: Root
   }
 ]);
 
